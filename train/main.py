@@ -21,8 +21,8 @@ if __name__ == "__main__":
 
     # %%
 
-    epoch_num = 50
-    batch_size = 32
+    epoch_num = 1260
+    batch_size = 64
     train_data = PuzzleDataset("../train-data")
     train_loader = DataLoader(dataset=train_data, batch_size=batch_size, shuffle=True)
     loss_func = nn.SmoothL1Loss()
